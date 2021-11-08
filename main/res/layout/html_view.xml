@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HtmlTextView">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorToolBar"
+            app:navigationIcon="?android:attr/homeAsUpIndicator" >
+
+            <!-- Freccia di ritorno:
+                app:navigationIcon="?attr/homeAsUpIndicator" -->
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:layout_marginEnd="0dp"
+                android:layout_marginStart="0dp"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/header_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="0dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:text="-------"
+                    android:visibility="visible"/>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/zoom_out_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|center_vertical"
+                        android:theme="?android:attr/buttonBarButtonStyle"
+                        android:background="@android:color/transparent"
+                        android:visibility="visible"
+                        android:src="@drawable/ic_zoom_out_24dp" />
+
+                    <ImageButton
+                        android:id="@+id/zoom_in_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|center_vertical"
+                        android:theme="?android:attr/buttonBarButtonStyle"
+                        android:background="@android:color/transparent"
+                        android:visibility="visible"
+                        android:src="@drawable/ic_zoom_in_24dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <!-- android:elevation="4dp" -->
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!--  Inizio: @layout/content_main  -->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout_htmlview"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?android:attr/actionBarSize"
+        android:background="@android:color/transparent">
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            android:background="@android:color/transparent" />
+
+    </LinearLayout>
+
+    <!--  Fine: @layout/content_main  -->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

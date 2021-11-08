@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Quick Green Pass</string>
+	<string name="main_text">Quick Green Pass</string>
+	
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Option menu -->
+    <string name="menu_gallery">Carica da file</string>
+    <string name="menu_camera">Carica da fotocamera</string>
+    <string name="menu_info">Informazioni</string>
+    <string name="menu_cancel">Annulla</string>
+    <string name="menu_exit">Esci</string>
+
+    <!-- Messages -->
+    <string name="ok">OK</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+    <string name="confirm">Confermi?</string>
+    <string name="warning">Attenzione!</string>
+	<string name="await">Caricamento immagine. Attendere...</string>
+
+</resources>
