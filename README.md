@@ -1,0 +1,2 @@
+# Quick Green Pass
+ È una semplice applicazione utile per mostrare rapidamente il Green Pass senza doverlo cercare ogni volta nelle cartelle dello smartphone. L'immagine del Green Pass dovrà essere caricata al primo avvio ed eventualmente modificata in seguito. L'immagine può essere ridimensionata tramite gli appositi pulsanti. Si consiglia di caricare il Green pass da "IO, l'app dei servizi pubblici".   L'applicazione non richiede connessione ad Internet, è gratuita e non presenta alcuna forma di pubblicità.
